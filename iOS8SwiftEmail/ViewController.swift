@@ -27,6 +27,12 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate, UIT
   }
 
   @IBAction func sendMail(sender: AnyObject) {
+    var mail = MFMailComposeViewController()
+    mail.mailComposeDelegate = self
+    mail.setSubject(subject.text)
+    mail.setMessageBody(body.text, isHTML: true)
+    
+    presentViewController(mail, animated: true, completion: nil)
   }
 
 }
