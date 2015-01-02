@@ -35,5 +35,24 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate, UIT
     presentViewController(mail, animated: true, completion: nil)
   }
 
+  // MFMailComposeViewControllerDelegate
+  func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
+    dismissViewControllerAnimated(true, completion: nil)
+  }
+  
+  func textFieldShouldReturn(textField: UITextField) -> Bool {
+    textField.resignFirstResponder()
+    return true
+  }
+  
+  func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+    
+    body.text = textView.text
+    if text == "\n" {
+      textView.resignFirstResponder()
+      return false
+    }
+    return true
+  }
 }
 
