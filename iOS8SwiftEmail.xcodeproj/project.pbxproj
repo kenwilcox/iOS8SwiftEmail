@@ -14,7 +14,6 @@
 		BECA82141A57455200324C56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECA82121A57455200324C56 /* LaunchScreen.xib */; };
 		BECA82201A57455200324C56 /* iOS8SwiftEmailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA821F1A57455200324C56 /* iOS8SwiftEmailTests.swift */; };
 		BECA822B1A5745F100324C56 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BECA82291A5745F100324C56 /* LICENSE */; };
-		BECA822C1A5745F100324C56 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BECA822A1A5745F100324C56 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,7 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BECA822C1A5745F100324C56 /* README.md in Sources */,
 				BECA820C1A57455200324C56 /* ViewController.swift in Sources */,
 				BECA820A1A57455200324C56 /* AppDelegate.swift in Sources */,
 			);
@@ -415,6 +413,7 @@
 				BECA82251A57455200324C56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BECA82261A57455200324C56 /* Build configuration list for PBXNativeTarget "iOS8SwiftEmailTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +422,7 @@
 				BECA82281A57455200324C56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
