@@ -13,6 +13,8 @@
 		BECA82111A57455200324C56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECA82101A57455200324C56 /* Images.xcassets */; };
 		BECA82141A57455200324C56 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECA82121A57455200324C56 /* LaunchScreen.xib */; };
 		BECA82201A57455200324C56 /* iOS8SwiftEmailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECA821F1A57455200324C56 /* iOS8SwiftEmailTests.swift */; };
+		BECA822B1A5745F100324C56 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BECA82291A5745F100324C56 /* LICENSE */; };
+		BECA822C1A5745F100324C56 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BECA822A1A5745F100324C56 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		BECA82191A57455200324C56 /* iOS8SwiftEmailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS8SwiftEmailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECA821E1A57455200324C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BECA821F1A57455200324C56 /* iOS8SwiftEmailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS8SwiftEmailTests.swift; sourceTree = "<group>"; };
+		BECA82291A5745F100324C56 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BECA822A1A5745F100324C56 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 		BECA81FB1A57455200324C56 = {
 			isa = PBXGroup;
 			children = (
+				BECA82291A5745F100324C56 /* LICENSE */,
+				BECA822A1A5745F100324C56 /* README.md */,
 				BECA82061A57455200324C56 /* iOS8SwiftEmail */,
 				BECA821C1A57455200324C56 /* iOS8SwiftEmailTests */,
 				BECA82051A57455200324C56 /* Products */,
@@ -194,6 +200,7 @@
 			files = (
 				BECA820F1A57455200324C56 /* Main.storyboard in Resources */,
 				BECA82141A57455200324C56 /* LaunchScreen.xib in Resources */,
+				BECA822B1A5745F100324C56 /* LICENSE in Resources */,
 				BECA82111A57455200324C56 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECA822C1A5745F100324C56 /* README.md in Sources */,
 				BECA820C1A57455200324C56 /* ViewController.swift in Sources */,
 				BECA820A1A57455200324C56 /* AppDelegate.swift in Sources */,
 			);
