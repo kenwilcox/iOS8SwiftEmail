@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,18 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BrT-d3-hhW">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BrT-d3-hhW">
                                 <rect key="frame" x="16" y="28" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lFV-jt-C6N">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFV-jt-C6N">
                                 <rect key="frame" x="16" y="66" width="568" height="179"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EV4-Jv-Wyf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EV4-Jv-Wyf">
                                 <rect key="frame" x="261" y="253" width="78" height="30"/>
                                 <state key="normal" title="Send Email">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,6 +36,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lFV-jt-C6N" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BAc-ym-w8R"/>
+                            <constraint firstItem="BrT-d3-hhW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="GLt-4F-ElA"/>
+                            <constraint firstItem="EV4-Jv-Wyf" firstAttribute="top" secondItem="lFV-jt-C6N" secondAttribute="bottom" constant="8" symbolic="YES" id="Jyw-qD-Wnv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EV4-Jv-Wyf" secondAttribute="bottom" constant="317" id="Md5-3j-43m"/>
+                            <constraint firstItem="lFV-jt-C6N" firstAttribute="centerX" secondItem="EV4-Jv-Wyf" secondAttribute="centerX" id="P4g-oA-eV0"/>
+                            <constraint firstItem="lFV-jt-C6N" firstAttribute="top" secondItem="BrT-d3-hhW" secondAttribute="bottom" constant="8" symbolic="YES" id="fUA-4Z-S2c"/>
+                            <constraint firstItem="BrT-d3-hhW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nSP-vr-4q7"/>
+                            <constraint firstItem="BrT-d3-hhW" firstAttribute="leading" secondItem="lFV-jt-C6N" secondAttribute="leading" id="tMH-o7-6AH"/>
+                            <constraint firstItem="BrT-d3-hhW" firstAttribute="trailing" secondItem="lFV-jt-C6N" secondAttribute="trailing" id="wgT-9k-Ypi"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
