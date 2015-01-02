@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import MessageUI
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MFMailComposeViewControllerDelegate, UITextFieldDelegate, UITextViewDelegate {
 
   @IBOutlet var subject: UITextField!
   @IBOutlet var body: UITextView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    subject.delegate = self
+    body.delegate = self
   }
 
   override func didReceiveMemoryWarning() {
